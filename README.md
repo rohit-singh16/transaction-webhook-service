@@ -62,6 +62,10 @@ Response time: < 500ms
 Processing happens asynchronously
 
 👉 Test it:
+⚠️ Note:
+This endpoint only accepts POST requests.
+Accessing it directly in a browser will return "405 Method Not Allowed",
+which is expected behavior.
 
 POST https://transaction-webhook-service-lkeq.onrender.com/v1/webhooks/transactions
   -H "Content-Type: application/json" \
@@ -171,6 +175,7 @@ Payment providers retry webhooks multiple times. Idempotency ensures duplicate p
 
 
 <img width="1851" height="460" alt="image" src="https://github.com/user-attachments/assets/d60bc8e6-42f2-4588-b25e-d3d965244028" />
+
 
 
 
